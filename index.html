@@ -10,6 +10,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>artificial.js | Documentation</title>
 
+	<style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap'); </style>
+
 	<link rel="preload" href="assets/js/addons/highlight/highlight.min.csss" as="style">
 	<link rel="preload" href="assets/css/main.css" as="style">
 
@@ -21,36 +23,42 @@
 </head>
 
 <body>	
-	<div class="container">
-		<nav class="nav-menu">
-			<ul>
-				<li class="header">Introdução</li>
-				<li><a href="#intro-como-usar">Como usar</a></li>
-				<li><a href="#intro-criando-uma-rede">Criando uma rede</a></li>
-				<li><a href="#">Redefinindo pesos</a></li>
-				<li><a href="#">Manipulando Genoma</a></li>
-				<li class="header">Funções de Ativação</li>
-				<li><a href="#">Oque são funcções de atiação</a></li>
-				<li><a href="#">Chamando um função</a></li>
-			</ul>
-		</nav>
-		<main class="nav-context">
-			<div class="logo"></div>
-			<h1>Introdução</h1>
-			<h3 id="intro-como-usar">Como usar</h3>
-<pre><code class="javascript">const { Activations: fn, Generation, RNA }= require('artificial.js')
+	<div class="bg-dark">
+		<div class="container">
+			<nav class="nav-menu">
+				<ul class="font display">
+					<li class="header font size-18 bold">Introdução</li>
+					<li><a href="#intro-como-usar">Como usar</a></li>
+					<li><a href="#intro-criando-uma-rede">Criando uma rede</a></li>
+					<li><a href="#">Redefinindo pesos</a></li>
+					<li><a href="#">Manipulando Genoma</a></li>
+					<li class="header font size-18 bold">Funções de Ativação</li>
+					<li><a href="#">Oque são funcções de atiação</a></li>
+					<li><a href="#">Chamando um função</a></li>
+				</ul>
+			</nav>
+			<main class="context font text">
+				<div class="logo"></div>
+				<h1 class="font size-28 light">Introdução</h1>
+				<h3 id="intro-como-usar" class="font size-18 light">Como usar</h3>
+	<pre><code class="javascript">const { Activations: fn, Generation, RNA }= require('artificial.js')
 
 fn.ReLU()
 const rna = new RNA()
 console.log(rna)
 
 const generation = new Generation()
-console.log(generation)
-</code></pre>
-			<p></p>
-			<h3 id="intro-criando-uma-rede">Criando uma rede</h3>
-			<h1>Funções de Ativação</h1>
-		</main>
+console.log(generation)</code></pre>
+				<p></p>
+				<h3 id="intro-criando-uma-rede" class="font size-28 light">Criando uma rede</h3>
+				<h1 class="font size-22 light">Funções de Ativação</h1>
+			</main>
+		</div>
+		<footer>
+			<p>teste</p>
+			<p>teste</p>
+			<p>teste</p>
+		</footer>
 	</div>
 
 	<script src="assets/js/addons/highlight/highlight.min.js"></script>

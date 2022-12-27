@@ -1,0 +1,44 @@
+.logo {
+	margin: 0 auto;
+	background: url('../img/logo.svg') no-repeat;
+	object-fit: cover;
+	width: 420px;
+	height: 85px;
+	margin-bottom: 80px;
+}
+
+.bg-ligth {	
+	background-color: var(--color-light0);
+	color: var(--color-dark1);
+}
+
+.bg-dark {	
+	background-color: var(--color-dark2);
+	color: var(--color-light1);
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1400px;
+	display: grid;
+	grid-template-columns: auto 3fr;
+	gap: 40px;
+	position: relative;
+	min-height: 100%;
+}
+
+
+.bg-light .container + footer {	
+	background-color: var(--color-light1);
+}
+
+.bg-dark .container + footer {	
+	background-color: var(--color-dark3);
+}
+
+.container + footer {
+	grid-column: 1/-1;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
