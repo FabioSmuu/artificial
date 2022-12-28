@@ -1,49 +1,118 @@
-/*/////////////////////////
-// nav-menu				*/
-.nav-menu {
-	padding: 8px;
-	align-self: stretch;
-	height: 100%;
+.row {
+    display: flex;
+    width: 100%;
 }
 
-.nav-menu li {
+/*/////////////////////////
+// .col-1				*/
+.col-1 {
+	padding: 8px;
+    width: auto;
+    overflow: auto;
+  	scroll-behavior: smooth;
+}
+
+.col-1 li {
 	border-left: 3px solid var(--color-primary2);
 	padding: 5px;
 	padding-left: 16px;
+	border-radius: 0 5px 5px 0;
 }
 /*
-.nav-menu li:nth-child(odd)  {
+.col-1 li:nth-child(odd)  {
 	background-color:var(--color-bg2);
 }
 */
-.nav-menu li a {
+
+.col-1 li a {
 	display: block;
 	box-sizing: content-box;
 	padding: 8px 32px 8px 16px;
 }
 
-.nav-menu li a:hover {
+.col-1 li a:hover {
 	text-decoration: underline;
 }
 
-.nav-menu li:hover {
+.col-1 li:hover {
 	border-left: 3px solid var(--color-primary1);
 	background-color: var(--color-dark0);
-	border-radius: 0 5px 5px 0;
 }
 
-.nav-menu .header {
+.col-1 .header {
 	border-bottom: 1px solid var(--color-dark0);
 	padding: 16px
 }
 
-.nav-menu .header:hover {
+.col-1 .header:hover {
 	background-color: var(--color-dark2);
 }
 
+.active {
+	font-weight: 900;
+	color: #fff;
+	background-color: var(--color-dark1) !important;
+}
+
+.col-1 .active a:hover {
+	text-decoration: none;
+}
+
+
 /*/////////////////////////
-// context				*/
-.context {
-	padding: 80px;
+// .col-2				*/
+.col-2 {
+    flex: 1;
+    overflow: auto;
+  	scroll-behavior: smooth;
 	border-left: 1px solid var(--color-dark0);
+}
+
+
+/*/////////////////////////
+// feature				*/
+
+.version {
+	display: grid;
+	gap: 20px;
+	margin-top: 20px;
+	grid-template-columns: auto 1fr;
+}
+
+.feature-beta,
+.feature-fix,
+.feature-remove,
+.feature-add {
+	grid-column: 2;
+	position: relative;
+}
+
+.feature-beta::before {
+	background: url('../img/icons/beta.svg') no-repeat;
+}
+
+.feature-fix::before {
+	background: url('../img/icons/fix.svg') no-repeat;
+}
+
+.feature-remove::before {
+	background: url('../img/icons/remove.svg') no-repeat;
+}
+
+.feature-add::before {
+	background: url('../img/icons/add.svg') no-repeat;
+}
+
+.feature-beta::before,
+.feature-fix::before,
+.feature-remove::before,
+.feature-add::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: -25px;
+	object-fit: cover;
+	background-size:14px 14px;
+	width: 14px;
+	height: 14px;
 }

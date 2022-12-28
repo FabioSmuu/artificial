@@ -1,0 +1,36 @@
+/* WebKit browsers */
+.scrollable::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--color-dark1);
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--color-dark0);
+    }
+
+.scrollable::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: var(--color-dark1);
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-primary2);
+}
+
+/* Firefox */
+.scrollable {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-dark0) var(--color-dark1);
+}
+
+/* Microsoft Edge and Google Chrome */
+.scrollable {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-dark0) var(--color-dark1);
+}
+
+/* Default style for other browsers */
+.scrollable {
+    overflow: auto;
+}

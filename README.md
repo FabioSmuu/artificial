@@ -7,6 +7,9 @@
 	<p>
 		<a href="https://www.npmjs.com/package/artificial.js"><img src="https://img.shields.io/npm/v/artificial.js.svg?maxAge=3600" alt="npm version" /></a>
 		<a href="https://www.npmjs.com/package/artificial.js"><img src="https://img.shields.io/npm/dt/artificial.js.svg?maxAge=3600" alt="npm downloads" /></a>
+		<a href="https://github.com/fabiosmuu/artificial.js/tree/main/LICENSE
+		"><img src="https://img.shields.io/npm/l/artificial.js.svg?maxAge=3600" alt="npm license" /></a>
+		<img src="https://img.shields.io/snyk/vulnerabilities/npm/artificial.js" alt="npm vulnerabilities" />
 	</p>
 </div>
 
@@ -24,7 +27,9 @@ check out a separate version of the same developed: [FabioSmuu/RNA](https://gith
 - [Documentation][docs]
 - [GitHub][github]
 - [npm][npm]
+- [yarn][yarn]
 
 [docs]: https://artificial.js.org
 [github]: https://github.com/fabiosmuu/artificial.js
 [npm]: https://www.npmjs.com/package/artificial.js
+[yarn]: https://yarn.pm/artificial.js
