@@ -68,3 +68,47 @@
 .line {
 	border-bottom: 1px solid currentColor;
 }
+
+.gap-20 {
+	display: grid;
+	gap: 20px;
+}
+
+.grid-list {
+	display: grid;
+	align-content: start;
+}
+
+.grid-col-3 {
+	display: grid;
+	gap: 20px;
+	margin-top: 40px;
+	grid-template-columns: repeat(3, auto);
+}
+
+.grid-col-4 {
+	display: grid;
+	gap: 20px;
+	margin-top: 40px;
+	grid-template-columns: repeat(4, auto);
+}
+
+.grid-col-3 .header,
+.grid-col-4 .header {
+	color: var(#fff);
+}
+
+.link {
+	color: var(--color-primary2);
+	font-weight: 400;
+}
+
+
+.link:hover {
+	color: #fff;
+}
+
+.parans:hover {
+	text-decoration: underline;
+	color: #fff;
+}

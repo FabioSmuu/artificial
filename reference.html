@@ -8,9 +8,9 @@
     <meta name="keywords" content="rna, neuron, weight, bias, rede-neural, neural, neural-network, generation, genetic-algorithm, genetic, algorithm, pooling, normalize, learning, ai, ia, inteligencia, inteligence, artificial-inteligence, artificial, ArcTan, BentIdentity, BinaryStep, Gaussian, Identity, LeakyReLU, Swish, ReLU, SELU, Sigmoid, SigmoidRcional, HardSigmoid, SiLU, Sinc, Sinusoid, SoftSign, SoftPlus, TanH, PReLU, ELU">
     <meta name="author" content="Fabio Smuu">
 
-    <meta property="og:url" content="https://artificial.js.org/versioning.html">
+    <meta property="og:url" content="https://artificial.js.org/reference.html">
 
-    <meta property="og:title" content="Versioning | artificial.js">
+    <meta property="og:title" content="Reference | artificial.js">
     <meta property="og:site_name" content="artificial.js">
     <meta name="theme-color" content="#71d7be">
     <meta property="og:description" content="artificial.js is a library with a module focused on neural networks and genetic algorithms.">
@@ -21,7 +21,7 @@
     <meta property="og:image:height" content="420">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Versioning | artificial.js</title>
+    <title>Reference | artificial.js</title>
 
     <style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap'); </style>
 
@@ -46,9 +46,9 @@
                         <li class="header font size-18 bold">Documentation</li>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="get-started.html">Get Started</a></li>
-                        <li><a href="reference.html">Reference</a></li>
+                        <li class="active"><a>Reference</a></li>
                         <li><a href="examples">Examples</a></li>
-                        <li class="active"><a>Versioning</a></li>
+                        <li><a href="versioning.html">Versioning</a></li>
                         <li class="header font size-18 bold">Reference</li>
                         <li><a href="neural-network.html">Neural Network</a></li>
                         <li><a href="genetic.html">Genteic</a></li>
@@ -80,18 +80,34 @@
                 <main class="col-2 scrollable">
                     <div class="context">
                         <div class="logo"></div>
-                        <h1 class="font size-28 light line">Versioning</h1>
-                        <span>1.0.1</span>
+                        <h1 class="font size-28 light line">Reference</h1>
+                        <span>this page contains any and all references available.</span>
 
-                        <div class="version">
-                            <div class="version-build font bold">1.0.1:</div>
-                            <span class="version-description">start of the project and creation of the documentation.</span>
-                            <span class="feature-add">Teste generico de adição</span>
-                            <span class="feature-remove">Teste generico de remoção</span>
-                            <span class="feature-fix">Teste generico de fix</span>
-                            <span class="feature-beta">Teste generico de beta</span>
-                        </div>
-                        
+                        <div class="font display light size-18 grid-col-3">
+                            <div class="grid-list gap-20">
+                                <span class="font bold size-22 header">RNA</span>
+                                <span><a href="#" class="link">calc</a> (<a href="#" class="parans">weight</a>, <a href="#" class="parans">input</a>, <a href="#" class="parans">bias</a>)</span>
+                                <span><a href="#" class="link">inputs</a> (<a href="#" class="parans">input</a>)</span>
+                                <span><a href="#" class="link">createNeuron</a> (<a href="#" class="parans">input</a>, <a href="#" class="parans">count</a>)</span>
+                                <span><a href="#" class="link">outputs</a> (<a href="#" class="parans">neuron</a>, <a href="#" class="parans">callback</a>, <a href="#" class="parans">count</a>)</span>
+                                <span><a href="#" class="link">setWeight</a> (<a href="#" class="parans">neuron</a>, <a href="#" class="parans">weight</a>)</span>
+                                <span><a href="#" class="link">genConcat</a> (<a href="#" class="parans">neuron</a>'s)</span>
+                                <span><a href="#" class="link">splitGen</a> (<a href="#" class="parans">genome</a>, <a href="#" class="parans">neuron_count</a>, <a href="#" class="parans">input_count</a>)</span>
+                            </div>
+                            <div class="grid-list gap-20">
+                                <span class="font bold size-22 header">Neuron</span>
+                                <span><a href="#" class="parans">input</a></span>
+                                <span><a href="#" class="parans">weight</a></span>
+                                <span><a href="#" class="parans">bias</a></span>
+                                <span><a href="#" class="parans">output</a></span>
+                            </div>
+                            <div class="grid-list gap-20">
+                                <span class="font bold size-22 header">Genetics</span>
+                                <span><a href="#" class="link">softmax</a> (<a href="#" class="parans">genome</a>)</span>
+                                <span><a href="#" class="link">mutation</a> (<a href="#" class="parans">genome</a>, <a href="#" class="parans">count</a>)</span>
+                                <span><a href="#" class="link">crossover</a> (<a href="#" class="parans">genome</a>, <a href="#" class="parans">genome</a>, <a href="#" class="parans">index</a>)</span>
+                            </div>
+                        </div>                        
                     </div>
                     <footer class="font size-14 light">
                         <div class="left">© 2022 artificial.js, Inc.</div>
