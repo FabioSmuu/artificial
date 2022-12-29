@@ -81,9 +81,10 @@
 
 .grid-col-3 {
 	display: grid;
-	gap: 20px;
+	gap: 98px;
 	margin-top: 40px;
 	grid-template-columns: repeat(3, auto);
+	justify-content: start;
 }
 
 .grid-col-4 {
