@@ -87,7 +87,7 @@
                         <div class="font display light size-18 grid-col-3">
                             <div class="grid-list gap-20">
                                 <span class="font bold size-22 header">RNA</span>
-                                <span><a data-tooltip="method: the calc method returns the calculated output of the weights, bias and inputs." href="#" class="link">calc</a> (<a href="#" class="parans">weight</a>, <a href="#" class="parans">input</a>, <a href="#" class="parans">bias</a>)</span>
+                                <span><a data-tooltip="method: the calc method returns the calculated output of the weights, bias and inputs." href="#calc" class="link">calc</a> (<a href="#" class="parans">weight</a>, <a href="#" class="parans">input</a>, <a href="#" class="parans">bias</a>)</span>
                                 <span><a href="#" class="link">inputs</a> (<a href="#" class="parans">input</a>)</span>
                                 <span><a href="#" class="link">createNeuron</a> (<a href="#" class="parans">input</a>, <a href="#" class="parans">count</a>)</span>
                                 <span><a href="#" class="link">outputs</a> (<a href="#" class="parans">neuron</a>, <a href="#" class="parans">callback</a>, <a href="#" class="parans">count</a>)</span>
@@ -108,7 +108,56 @@
                                 <span><a href="#" class="link">mutation</a> (<a href="#" class="parans">genome</a>, <a href="#" class="parans">count</a>)</span>
                                 <span><a href="#" class="link">crossover</a> (<a href="#" class="parans">genome</a>, <a href="#" class="parans">genome</a>, <a href="#" class="parans">index</a>)</span>
                             </div>
-                        </div>                        
+                        </div>  
+
+                        <h1 class="font size-28 light">Detailed information</h1>
+                        <span >see detailed examples of each of the references.</span>
+
+                       <!--  <div class="list-gap-20">
+                            <span class="font bold size-22 header">RNA <span class="font display size-18 color-p2">: Class</span></span>
+                            <div class="font display light size-18">
+                                <span class="grid-list">
+                                    <span class="font size-18 bold">calc <span class="font display size-18 color-p2">: Method</span></span>
+                                    <div class="font text size-14">method: the calc method returns the calculated output of the weights, bias and inputs.</div><br>
+                                    <span class="font size-14 bold upper">parameters</span>
+                                    <span>weight <span class="font display size-18 color-p2">: Array</span></span>
+                                    <span>input <span class="font display size-18 color-p2">: Array</span></span>
+                                    <span>bias <span class="font display size-18 color-p2">: Number</span></span>
+                                    <br><span class="font size-14 bold upper">example usage</span>
+<pre><code class="javascript">const { Activations: fn, Generation, RNA }= require('artificial.js')
+fn.ReLU()
+const rna = new RNA()
+console.log(rna)
+
+const generation = new Generation()
+console.log(generation)</code></pre>
+                                </span>
+                            </div>
+                        </div> -->
+
+                            <div class="font bold size-22 header"><br>RNA <span class="font display size-18 color-p2">: Class</span></div>
+                         <div class="grid-col-2">
+                            <div>
+                                <span class="font size-14 bold upper">example usage</span>
+<pre><code class="javascript">const rede = new RNA()
+const input = [200, 15, 8]
+const weight = [-1, 7, 13]
+// const bias = 0
+rede.calc(input, weight /*, bias */)</code></pre>
+                                </span>
+                            </div>
+                            <div id="calc" class="font display light size-18">
+                                <span class="grid-list">
+                                    <span class="font size-18 bold">calc <span class="font display size-18 color-p2">: Method</span></span>
+                                    <div class="font text size-14">method: the calc method returns the calculated output of the weights, bias and inputs.</div><br>
+                                    <span class="font size-14 bold upper">parameters</span>
+                                    <span>weight <span class="font display size-18 color-p2">: Array</span></span>
+                                    <span>input <span class="font display size-18 color-p2">: Array</span></span>
+                                    <span>bias <span class="font display size-18 color-p2">: Number</span></span>
+                            </div>
+                        </div>
+                        
+
                     </div>
                     <footer class="font size-14 light">
                         <span class="left">© 2022 artificial.js, Inc.</span>
@@ -120,6 +169,6 @@
     </div>
 
     <script src="assets/js/addons/highlight/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>hljs.highlightAll();</script>
     <script src="assets/js/main.js"></script>
 </body>

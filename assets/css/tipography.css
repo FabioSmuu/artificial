@@ -36,3 +36,14 @@
 .font.light {
 	font-weight: 300;
 }
+
+.upper {
+	text-transform: uppercase;
+}
+
+.javascript {
+	font-size: 0.90rem;
+	font-weight: 400;
+	letter-spacing: 0.05rem;
+	font-family: monospace;
+}
