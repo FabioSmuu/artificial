@@ -2,7 +2,7 @@
 	margin: 0 auto;
 	background: url('../img/logo.svg') no-repeat;
 	object-fit: cover;
-	width: 420px;
+	width: 452px;
 	height: 85px;
 	margin-bottom: 80px;
 }
@@ -24,6 +24,71 @@
 	scroll-behavior: smooth;
 }
 
+.row {
+    display: flex;
+    width: 100%;
+}
+
+/*/////////////////////////
+// .col-1				*/
+.col-1 {
+	padding: 8px;
+    width: auto;
+    overflow: auto;
+  	scroll-behavior: smooth;
+}
+
+.col-1 li {
+	border-left: 3px solid var(--color-primary2);
+	padding: 5px;
+	padding-left: 16px;
+	border-radius: 0 5px 5px 0;
+}
+
+.col-1 li a {
+	display: block;
+	box-sizing: content-box;
+	padding: 8px 32px 8px 16px;
+}
+
+.col-1 li a:hover {
+	text-decoration: underline;
+}
+
+.col-1 li:hover {
+	border-left: 3px solid var(--color-primary1);
+	background-color: var(--color-dark0);
+}
+
+.col-1 .header {
+	border-bottom: 1px solid var(--color-dark0);
+	padding: 16px
+}
+
+.col-1 .header:hover {
+	background-color: var(--color-dark2);
+}
+
+.active {
+	font-weight: 900;
+	color: #fff;
+	background-color: var(--color-dark1) !important;
+}
+
+.col-1 .active a:hover {
+	text-decoration: none;
+}
+
+
+/*/////////////////////////
+// .col-2				*/
+.col-2 {
+    flex: 1;
+    overflow: auto;
+  	scroll-behavior: smooth;
+	border-left: 1px solid var(--color-dark0);
+}
+
 .container {
 	display: flex;
 	width: 100%;
@@ -31,38 +96,57 @@
 	overflow: hidden;
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .context {
+	flex: 1;
 	padding: 80px 0 0 80px;
 }
 
-.bg-light .container .col-2 footer {	
+.bg-ligh .col-2 footer {	
 	background-color: var(--color-light1);
 }
 
-.bg-dark .col-2 footer {	
+.bg-dark .col-2 footer {
 	background-color: var(--color-dark3);
 }
 
 .container .col-2 footer {
 	margin-top: 80px;
-	position: relative;
-	left: 0;
-	right: 0;
-	bottom: 0;
+
 	padding: 25px;
-	display: flex;
+	display: flex;	
 	justify-content: space-between;
+	align-items: center;
+}
+
+.container .col-2 footer .left::before {
+	content: "";
+	margin-right: 16px;
+	display: flex;
+	align-items: center;
+	background: url('../img/icon.svg');
+	background-repeat: no-repeat;
+	object-fit: cover;
+	background-size: 32px 32px;
+	width: 32px;
+	height: 32px;
+}
+
+.container .col-2 footer .left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .container .col-2 footer a:hover {
 	color: #fff;
 	text-decoration: underline;
 	bottom: 0;
-}
-
-.left,
-.right {
-	flex: 0 0 auto;
 }
 
 .line {
