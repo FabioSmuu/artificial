@@ -1,3 +1,7 @@
+.font {
+	text-transform: initial;
+}
+
 .font.text {
 	font-family: 'Roboto', sans-serif;
 }
