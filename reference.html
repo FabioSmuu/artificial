@@ -68,28 +68,15 @@
                         <li class="active"><a>Reference</a></li>
                         <li><a href="examples">Examples</a></li>
                         <li><a href="./versioning">Versioning</a></li>
-                        <li class="header font size-18 bold">Activation Functions</li>
-                        <li><a href="./action-functions#pipe">CallBack</a></li>
-                        <li><a href="./action-functions#arctan">ArcTan</a></li>
-                        <li><a href="./action-functions#bentidentity">BentIdentity</a></li>
-                        <li><a href="./action-functions#binarystep">BinaryStep</a></li>
-                        <li><a href="./action-functions#gaussian">Gaussian</a></li>
-                        <li><a href="./action-functions#identity">Identity</a></li>
-                        <li><a href="./action-functions#leakyrelu">LeakyReLU</a></li>
-                        <li><a href="./action-functions#swish">Swish</a></li>
-                        <li><a href="./action-functions#relu">ReLU</a></li>
-                        <li><a href="./action-functions#selu">SELU</a></li>
-                        <li><a href="./action-functions#sigmoid">Sigmoid</a></li>
-                        <li><a href="./action-functions#sigmoidracional">SigmoidRacional</a></li>
-                        <li><a href="./action-functions#hardsigmoid">HardSigmoid</a></li>
-                        <li><a href="./action-functions#silu">SiLU</a></li>
-                        <li><a href="./action-functions#sinc">Sinc</a></li>
-                        <li><a href="./action-functions#sinusoid">Sinusoid</a></li>
-                        <li><a href="./action-functions#softsign">SoftSign</a></li>
-                        <li><a href="./action-functions#softplus">SoftPlus</a></li>
-                        <li><a href="./action-functions#tanh">TanH</a></li>
-                        <li><a href="./action-functions#prelu">PReLU</a></li>
-                        <li><a href="./action-functions#elu">ELU</a></li>
+                        <li class="header font size-18 bold">Classes</li>
+                        <li><a href="/reference/neuron">Neuron</a></li>
+                        <li><a href="/reference/layer">Layer</a></li>
+                        <li><a href="/reference/genetics">Genetics</a></li>
+                        <li class="header font size-18 bold">Functions</li>
+                        <li><a href="/reference/activation_functions">Activation Functions</a></li>
+                        <li><a href="/reference/randomize_weights">Randomize Weights</a></li>
+                        <li><a href="/reference/poolings">Poolings</a></li>
+                        <li><a href="/reference/normalizers">Normalizers</a></li>
                     </ul>
                 </nav>
                 <main class="col-2 scrollable">
@@ -98,239 +85,19 @@
                         <h1 class="font size-28 light line">Reference</h1>
                         <span>this page contains any and all references available.</span>
 
-                        <div class="font display light size-18 grid-col-3">
+                        <div class="grid-col-2">
                             <div class="grid-list gap-20">
-                                <span class="font bold size-22 header">Methods</span>
-                                <span><a href="#calculate" data-tooltip="Type: Method" class="link">calculate</a> (<a href="#" data-tooltip="Type: Array" class="parans">inputs</a>, <a href="#" data-tooltip="Type: Function" class="parans">callback</a>) <span class="identify font text size-14 light">&lt;Layer, Neuron&gt;</span></span>
-                                <span><a href="#setWeights" data-tooltip="Type: Method" class="link">setWeights</a> (<a href="#" data-tooltip="Type: Array [Number]" class="parans">weights</a>) <span class="identify font text size-14 light">&lt;Layer, Neuron&gt;</span></span>
-                                <span><a href="#setBias" data-tooltip="Type: Method" class="link">setBias</a> (<a href="#" data-tooltip="Type: Number" class="parans">bias</a>) <span class="identify font text size-14 light">&lt;Layer, Neuron&gt;</span></span>
-                                <span><a href="#mutation" data-tooltip="Type: Method" class="link">mutation</a> (<a href="#" data-tooltip="Type: Array [Number]" class="parans">genome</a>, <a href="#" data-tooltip="Type: Number" class="parans">muation_count</a>) <span class="identify font text size-14 light">&lt;Genetics&gt;</span></span>
-                                <span><a href="#crossover" data-tooltip="Type: Method" class="link">crossover</a> (<a href="#" data-tooltip="Type: Array [Number]" class="parans">genome1</a>, <a href="#" data-tooltip="Type: Array [Number]" class="parans">genome2</a>, <a href="#" data-tooltip="Type: Number" class="parans">index</a>) <span class="identify font text size-14 light">&lt;Genetics&gt;</span></span>
-                                <span><a href="#concatGen" data-tooltip="Type: Method" class="link">concatGen</a> (<a href="#" data-tooltip="Type: Array [Neuron]" class="parans">neuron</a>) <span class="identify font text size-14 light">&lt;Genetics&gt;</span></span>
-                                <span><a href="#splitGen" data-tooltip="Type: Method" class="link">splitGen</a> (<a href="#" data-tooltip="Type: Array [Number]" class="parans">genome</a>, <a href="#" data-tooltip="Type: Number" class="parans">neuron_count</a>, <a href="#" data-tooltip="Type: Number" class="parans">input_count</a>) <span class="identify font text size-14 light">&lt;Genetics&gt;</span></span>
+                                <span class="font bold size-22 header">Classes</span>
+                                <span><a href="/reference/neuron" data-tooltip="Type: Class" class="link">Neuron</a></span>
+                                <span><a href="/reference/layer" data-tooltip="Type: Class" class="link">Layer</a></span>
+                                <span><a href="/reference/genetics" data-tooltip="Type: Class" class="link">Genetics</a></span>
                             </div>
                             <div class="grid-list gap-20">
-                                <span class="font bold size-22 header">Properties</span>
-                                <span><a href="#" data-tooltip="Type: Array [Neuron]" class="parans">neurons</a> <span class="identify font text size-14 light">&lt;Layer&gt;</span></span>
-                                <span><a href="#" data-tooltip="Type: Array [Number]" class="parans">weights</a> <span class="identify font text size-14 light">&lt;Layer, Neuron&gt;</span></span>
-                                <span><a href="#" data-tooltip="Type: Number" class="parans">bias</a> <span class="identify font text size-14 light">&lt;Layer, Neuron&gt;</span></span>
-                                <span><a href="#" data-tooltip="Type: Number" class="parans">output</a> <span class="identify font text size-14 light">&lt;Neuron&gt;</span></span>
-                                <span><a href="#" data-tooltip="Type: Number" class="parans">outputs</a> <span class="identify font text size-14 light">&lt;Layer&gt;</span></span>
-                            </div>
-                            <!-- <div class="grid-list gap-20">
-                                <span class="font bold size-22 header">Class</span>
-                                <span><a href="#" class="parans">Neuron</a></span>
-                                <span><a href="#" class="parans">Layer</a></span>
-                                <span><a href="#" class="parans">Genetics</a></span>
-                            </div> -->
-                        </div>  
-
-                        <h1 class="font size-28 light">Detailed information</h1>
-                        <span >see detailed examples of each of the references.</span>
-
-                        <div class="font bold size-22 header line"><br>Layer, Neuron <span class="font display size-18 color-p2">: Class</span></div>
-
-                         <div class="grid-col-2" id="calculate">
-                            <div class="title">
-                                <a class="font bold size-22 hashtag" href="#calculate"># </a><span class="font bold size-22">calculate <span class="font display size-22 color-p2">: Method</span></span>
-                            </div>
-                            <div class="gcol-1">
-
-<pre><code class="javascript">const inputs = [200, 15, 8]
-
-// const example = new Layer(2)
-const example = new Neuron()
-
-const output = example.calculate(inputs, ReLU)
-
-console.log(output)</code></pre><br>
-                                <span class="font size-14 bold upper">example usage</span><br>
-                                <span class="font text size-14 regular">this example is calculating an array of inputs and returning the result in the ReLU activation function, note in the comments that it is possible to use a Neuron or a Layer.</span>
-                            </div>
-                            <div class="gcol-2 font display light size-18">
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">description</span>
-                                    <div class="font text size-14">calculate is a method called by the Layer or Neuron class, its use is given by inserting the inputs and the activation function as arguments to return an output.</div><br>
-                                </div>
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">parameters</span>
-                                    <span>inputs <span class="font display size-18 color-p2">: Array</span></span>
-                                    <span>callback <span class="font display size-18 color-p2">: Function</span></span>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                         <div class="grid-col-2" id="setWeights">
-                            <div class="title">
-                                <a class="font bold size-22 hashtag" href="#setWeights"># </a><span class="font bold size-22">setWeights <span class="font display size-22 color-p2">: Method</span></span>
-                            </div>
-                            <div class="gcol-1">
-
-<pre><code class="javascript">const example = new Neuron()
-
-// const example = new Layer(2)
-// const weights = [[100, 1, 5], [-200, 5, 10]]
-
-const weights = [100, 1, 5]
-example.setWeights(weights)
-
-console.log(example.weights)
-</code></pre><br>
-                                <span class="font size-14 bold upper">example usage</span><br>
-                                <span class="font text size-14 regular">in this example the weights of the neuron created are redefined, note in the comments that it is possible to use a Neuron or a Layer.</span>
-                            </div>
-                            <div class="gcol-2 font display light size-18">
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">description</span>
-                                    <div class="font text size-14">setWeights is a method called by the Layer or Neuron class, it is used by inserting a numerical array as arguments to define the weights of the neurons.</div><br>
-                                </div>
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">parameters</span>
-                                    <span>weights <span class="font display size-18 color-p2">: Array [Number]</span></span>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                         <div class="grid-col-2" id="setBias">
-                            <div class="title">
-                                <a class="font bold size-22 hashtag" href="#setBias"># </a><span class="font bold size-22">setBias <span class="font display size-22 color-p2">: Method</span></span>
-                            </div>
-                            <div class="gcol-1">
-
-<pre><code class="javascript">//
-</code></pre><br>
-                                <span class="font size-14 bold upper">example usage</span><br>
-                                <span class="font text size-14 regular">...</span>
-                            </div>
-                            <div class="gcol-2 font display light size-18">
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">description</span>
-                                    <div class="font text size-14">...</div><br>
-                                </div>
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">parameters</span>
-                                    <span>bias <span class="font display size-18 color-p2">: Number</span></span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="font bold size-22 header line"><br>Genetics <span class="font display size-18 color-p2">: Class</span></div>
-
-
-
-                         <div class="grid-col-2" id="mutation">
-                            <div class="title">
-                                <a class="font bold size-22 hashtag" href="#mutation"># </a><span class="font bold size-22">mutation <span class="font display size-22 color-p2">: Method</span></span>
-                            </div>
-                            <div class="gcol-1">
-
-<pre><code class="javascript">//
-</code></pre><br>
-                                <span class="font size-14 bold upper">example usage</span><br>
-                                <span class="font text size-14 regular">...</span>
-                            </div>
-                            <div class="gcol-2 font display light size-18">
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">description</span>
-                                    <div class="font text size-14">...</div><br>
-                                </div>
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">parameters</span>
-                                    <span>genome <span class="font display size-18 color-p2">: Array [Number]</span></span>
-                                    <span>muation_count <span class="font display size-18 color-p2">: Number</span></span>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-                         <div class="grid-col-2" id="crossover">
-                            <div class="title">
-                                <a class="font bold size-22 hashtag" href="#crossover"># </a><span class="font bold size-22">crossover <span class="font display size-22 color-p2">: Method</span></span>
-                            </div>
-                            <div class="gcol-1">
-
-<pre><code class="javascript">//
-</code></pre><br>
-                                <span class="font size-14 bold upper">example usage</span><br>
-                                <span class="font text size-14 regular">...</span>
-                            </div>
-                            <div class="gcol-2 font display light size-18">
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">description</span>
-                                    <div class="font text size-14">...</div><br>
-                                </div>
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">parameters</span>
-                                    <span>genome1 <span class="font display size-18 color-p2">: Array [Number]</span></span>
-                                    <span>genome2 <span class="font display size-18 color-p2">: Array [Number]</span></span>
-                                    <span>index <span class="font display size-18 color-p2">: Number</span></span>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-                         <div class="grid-col-2" id="concatGen">
-                            <div class="title">
-                                <a class="font bold size-22 hashtag" href="#concatGen"># </a><span class="font bold size-22">concatGen <span class="font display size-22 color-p2">: Method</span></span>
-                            </div>
-                            <div class="gcol-1">
-
-<pre><code class="javascript">//
-</code></pre><br>
-                                <span class="font size-14 bold upper">example usage</span><br>
-                                <span class="font text size-14 regular">...</span>
-                            </div>
-                            <div class="gcol-2 font display light size-18">
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">description</span>
-                                    <div class="font text size-14">...</div><br>
-                                </div>
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">parameters</span>
-                                    <span>neuron <span class="font display size-18 color-p2">: Array [Neuron]</span></span>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-                         <div class="grid-col-2" id="splitGen">
-                            <div class="title">
-                                <a class="font bold size-22 hashtag" href="#splitGen"># </a><span class="font bold size-22">splitGen <span class="font display size-22 color-p2">: Method</span></span>
-                            </div>
-                            <div class="gcol-1">
-
-<pre><code class="javascript">//
-</code></pre><br>
-                                <span class="font size-14 bold upper">example usage</span><br>
-                                <span class="font text size-14 regular">...</span>
-                            </div>
-                            <div class="gcol-2 font display light size-18">
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">description</span>
-                                    <div class="font text size-14">...</div><br>
-                                </div>
-                                <div class="grid-list">
-                                    <span class="font size-14 bold upper">parameters</span>
-                                    <span>genome <span class="font display size-18 color-p2">: Array [Number]</span></span>
-                                    <span>neuron_count <span class="font display size-18 color-p2">: Number</span></span>
-                                    <span>input_count <span class="font display size-18 color-p2">: Number</span></span>
-                                </div>
+                                <span class="font bold size-22 header">Functions</span>
+                                <span><a href="/reference/activation_functions" data-tooltip="Type: Functions" class="link">Activation Functions</a></span>
+                                <span><a href="reference/randomize_weights" data-tooltip="Type: Functions" class="link">Randomize Weights</a></span>
+                                <span><a href="/reference/poolings" data-tooltip="Type: Functions" class="link">Poolings</a></span>
+                                <span><a href="/reference/normalizers" data-tooltip="Type: Functions" class="link">Normalizers</a></span>
                             </div>
                         </div>
 
