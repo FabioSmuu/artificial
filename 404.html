@@ -2,18 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Redirecting...</title>
+  <title>artificial.js - Biblioteca de Redes Neurais</title>
+  <meta name="description" content="Uma biblioteca de redes neurais modular e extensível para JavaScript e TypeScript. Construa modelos complexos a partir de componentes fundamentais." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://artificialjs.org/" />
+  <meta property="og:title" content="artificial.js - Biblioteca de Redes Neurais" />
+  <meta property="og:description" content="Uma biblioteca de redes neurais modular e extensível para JavaScript e TypeScript. Construa modelos complexos a partir de componentes fundamentais." />
+  <meta property="og:image" content="https://artificialjs.org/images/logo.svg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://artificialjs.org/" />
+  <meta property="twitter:title" content="artificial.js - Biblioteca de Redes Neurais" />
+  <meta property="twitter:description" content="Uma biblioteca de redes neurais modular e extensível para JavaScript e TypeScript. Construa modelos complexos a partir de componentes fundamentais." />
+  <meta property="twitter:image" content="https://artificialjs.org/images/logo.svg" />
+
   <script>
     // GitHub Pages SPA redirect solution
-    // This script takes the current url and converts the path and query
-    // string into just a query string, and then redirects the browser
-    // to the new url with only a query string and hash fragment
-    
-    // For example, http://artificial.js.org/reference
-    // becomes http://artificial.js.org/?p=/reference
-    
     var pathSegmentsToKeep = 0;
-    
     var l = window.location;
     l.replace(
       l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
